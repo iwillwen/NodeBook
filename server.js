@@ -25,6 +25,6 @@ var urlRouter = {
                 });
         }
     };
-web.run(urlRouter, 8080)
+web.run(urlRouter, 80)
     .get(getRouter)
     .post(postRouter);
