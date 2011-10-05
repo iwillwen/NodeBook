@@ -12,6 +12,11 @@ V5.registerPage("index", function () {
                 contentBox.val(msg);
             });
         }
+        
+        iscroll = new iScroll(view.$("article")[0], {
+            onBeforeScrollStart : function (e) {
+            }
+        });
 
         iscroll = new iScroll(view.$("article")[0], {
             onBeforeScrollStart : function (e) {

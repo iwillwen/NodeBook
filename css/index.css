@@ -7,10 +7,7 @@
 }
 #index .content {
     padding: 0 15px;
-    width: 100%;
     -webkit-box-sizing: border-box;
-    position: absolute;
-    top: 41px;
 }
 #index .content textarea {
     background-color: transparent;
@@ -43,4 +40,10 @@
     border-color: rgba(255, 255, 255, .3);
     margin: 0 5px;
     border-radius: 1em;
+}
+#index article {
+    top: 41px;
+    bottom: 37px;
+    position: absolute;
+    width: 100%;
 }
