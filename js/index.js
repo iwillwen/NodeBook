@@ -83,7 +83,7 @@ V5.registerPage("index", function () {
     };
 });
 V5.registerPage("list", function () {
-
+    var iscroll;
     var initialize = function () {
         var page = this;
         var view = V5.View(page.node);
@@ -91,9 +91,15 @@ V5.registerPage("list", function () {
             localStorage.notes = '[]';
         }
 
+        iscroll = new iScroll(view.$("article")[0], {
+            onBeforeScrollStart : function (e) {
+            }
+        });
+
         var _notes = JSON.parse(localStorage.notes);
         V5.getTemplate("list", function (tmpl) {
             view.$('#notes').html(_.template(tmpl, {data: _notes}));
+            iscroll.refresh();
         });
 
         view.bind("deleteNote", function (event) {
@@ -128,6 +134,7 @@ V5.registerPage("list", function () {
         var _notes = JSON.parse(localStorage.notes);
         V5.getTemplate("list", function (tmpl) {
             view.$('#notes').html(_.template(tmpl, {data: _notes}));
+            iscroll.refresh();
         });
     };
 
