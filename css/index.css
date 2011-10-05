@@ -44,3 +44,9 @@
     margin: 0 5px;
     border-radius: 1em;
 }
+#index article {
+    top: 41px;
+    bottom: 37px;
+    position: absolute;
+    width: 100%;
+}
