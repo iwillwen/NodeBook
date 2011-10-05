@@ -1,95 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Nodebook</title>
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<link rel="apple-touch-icon-precomposed" href="http://nodebook.cnodejs.net/css/images/nodebook-logo1.png"/>
-	<link rel="apple-touch-startup-image" href="http://nodebook.cnodejs.net/css/images/nodebook-login.png" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" >
-	<link rel="stylesheet" href="http://nodebook.cnodejs.net/css/jquerymobile.css" />
-	<link rel="stylesheet" href="http://nodebook.cnodejs.net/css/style.css" />
-	<script src="http://nodebook.cnodejs.net/js/jquery.js"></script>
-	<script src="http://nodebook.cnodejs.net/js/jquerymobile.js"></script>
-	<script src="http://nodebook.cnodejs.net/js/client.js"></script>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Nodebook</title>
+    <link rel="apple-touch-icon-precomposed" href="http://nodebook.cnodejs.net/css/images/nodebook-logo1.png"/>
+    <link rel="apple-touch-startup-image" href="http://nodebook.cnodejs.net/css/images/nodebook-login.png" />
+    <link rel="stylesheet" href="https://raw.github.com/V5Framework/V5/master/css/base.css" />
+    <link rel="stylesheet" href="http://nodebook.cnodejs.net/css/jquerymobile.css" />
+    <link rel="stylesheet" href="http://nodebook.cnodejs.net/css/style.css" />
+    <script src="js/V5/jquery.js"></script>
+    <script src="js/jquerymobile.js"></script>
+    <script src="http://nodebook.cnodejs.net/js/client.js"></script>
 </head>
 <body>
-	<div data-role="page" id="index" data-theme="e" class="page-body">
-		<div data-role="header" data-theme="e" data-position="fixed" class="header">
-			<h1>NodeBook</h1>
-		</div><!-- /header -->
-		<div data-role="content">
-			<div id="content-aera">
-				<textarea cols="1000" name="content" id="content"></textarea>
-			</div>
-			<a href="#dialog" data-rel="dialog" id="submit" data-role="button" data-theme="e" data-transition="slidedown" data-position="fixed">提交</a>
-		</div><!-- /content -->
-		<div data-role="footer" data-theme="e" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#index" class="ui-btn-active">新笔记</a></li>
-					<li><a href="#list">Note List</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-	</div><!-- /page -->
-	<div data-role="page" id="list" data-theme="e" class="page-body">
-		<div data-role="header" data-theme="e" data-position="fixed" class="header">
-			<h1>Note List</h1>
-		</div><!-- /header -->
-		<div data-role="content" data-theme="e">
-			<ul data-role="listview" data-theme="e" id="notes">
-			</ul>
-		</div><!-- /content -->
-		<div data-role="footer" data-theme="e" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#index" data-direction="reverse">新笔记</a></li>
-					<li><a href="#list" class="ui-btn-active">Note List</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-	</div><!-- /page -->
-	<div data-role="page" id="dialog" data-theme="e" class="page-body">
-		<div data-role="header" data-theme="e">
-			<h1>新笔记</h1>
-		</div>
-		<div data-role="content" data-theme="e" id="back-url">
-				<h3>地址：</h3>
-				<input type="text" name="url" id="url" value="请稍等.."  />
-				<div id="share-buttons">
-                    <a href="" id="sina-share">
-				    	<img src="http://www.sinaimg.cn/blog/developer/wiki/share_button_m.gif" alt="">
-                    </a>
-                    <a href="" id="qq-share">
-					    <img src="http://open.t.qq.com/images/resource/button24.png" alt="">
-                    </a>
-				</div>
-			<a href="#" id="back" data-role="button" data-rel="back" data-theme="e">返回</a>
-		</div><!-- /content -->
-	</div><!-- /page -->
-	<script>
-		if (localStorage.notes !== '[]' && localStorage.notes !== undefined) {
-			var _notes = JSON.parse(localStorage.notes);
-			for (var i = 0; i < _notes.length; i++) {
-				var note = $('<li><a class="content" href="' + _notes[i].url + '">' + _notes[i].content + '<a href="javascript:;" data-icon="delete" class="delete">删除</a></a></li>');
-				$('#notes').append(note);
-			}
-		} else {
-			localStorage.notes = '[]';
-			var _notes = JSON.parse(localStorage.notes);
-		}
-		$('.delete').live('click', function () {
-			var url = $(this).parent().find('.content').attr('href'),
-				note,
-				index;
-			for (var i = 0; i < _notes.length; i++)
-				if (_notes[i].url == url)
-					_notes.splice(i, 1);
-			localStorage.notes = JSON.stringify(_notes);
-			$(this).parent().remove();
-		});
-	</script>
+<div id="container">
+<!-- Document here! -->
+    <div class="alpha"></div>
+    <div class="beta"></div>
+    <div class="gamma"></div>
+</div>
 </body>
 </html>
