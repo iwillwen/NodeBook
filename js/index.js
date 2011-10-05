@@ -1,4 +1,5 @@
 V5.registerPage("index", function () {
+    var iscroll;
     var initialize = function (id) {
         var page = this;
         var view = V5.View(page.node);
@@ -11,6 +12,11 @@ V5.registerPage("index", function () {
                 contentBox.val(msg);
             });
         }
+
+        iscroll = new iScroll(view.$("article")[0], {
+            onBeforeScrollStart : function (e) {
+            }
+        });
 
         view.bind("redirect", function (event) {
             var target = $(event.currentTarget);
