@@ -1,0 +1,17 @@
+<section class="page" id="list">
+    <header>
+        <h1>Note List</h1>
+    </header><!-- /header -->
+    <article>
+        <ul class="listview" id="notes">
+        </ul>
+    </article><!-- /content -->
+    <footer>
+        <nav>
+            <ul>
+                <li class="active"><a href="#index">新笔记</a></li>
+                <li><a href="#list">Note List</a></li>
+            </ul>
+        </nav><!-- /navbar -->
+    </footer><!-- /footer -->
+</section>
