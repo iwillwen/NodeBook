@@ -1,0 +1,175 @@
+section.page {
+    background: url('http://nodebook.cnodejs.net/css/images/wood.jpg');
+}
+header {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ffdf68),to(#f9b500));
+    background-image: -webkit-linear-gradient(top,#ffdf68,#f9b500);
+    background-image: -moz-linear-gradient(top,#ffdf68,#f9b500);
+    background-image: -ms-linear-gradient(top,#ffdf68,#f9b500);
+    background-image: -o-linear-gradient(top,#ffdf68,#f9b500);
+    background-image: linear-gradient(top,#ffdf68,#f9b500);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+header h1 {
+    min-height: 1.1em;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: .6em 90px .8em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ui-btn-e {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#FFDF68),to(#F9B500));
+    background-image: -webkit-linear-gradient(top,#FFDF68,#F9B500);
+    background-image: -moz-linear-gradient(top,#FFDF68,#F9B500);
+    background-image: -ms-linear-gradient(top,#FFDF68,#F9B500);
+    background-image: -o-linear-gradient(top,#FFDF68,#F9B500);
+    background-image: linear-gradient(top,#FFDF68,#F9B500);
+}
+#back-url {
+    text-align: center;
+}
+#share-buttons {
+    margin-top: 10px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+nav ul {
+    display: -webkit-box;
+}
+nav ul li {
+    -webkit-box-flex: 1;
+    height: 35px;
+    border: 1px solid #F7C942;
+    border-right: none;
+    background-color: #fadb4e;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fceda7),to(#fadb4e));
+    background-image: -webkit-linear-gradient(top,#fceda7,#fadb4e);
+    background-image: -moz-linear-gradient(top,#fceda7,#fadb4e);
+    background-image: -ms-linear-gradient(top,#fceda7,#fadb4e);
+    background-image: -o-linear-gradient(top,#fceda7,#fadb4e);
+    background-image: linear-gradient(top,#fceda7,#fadb4e)
+}
+nav ul li:first-child {
+    border-left: none;
+}
+nav ul li.active {
+    background-color: #4596CE;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #145072;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#85bae4),to(#5393c5));
+    background-image: -webkit-linear-gradient(top,#85bae4,#5393c5);
+    background-image: -moz-linear-gradient(top,#85bae4,#5393c5);
+    background-image: -ms-linear-gradient(top,#85bae4,#5393c5);
+    background-image: -o-linear-gradient(top,#85bae4,#5393c5);
+    background-image: linear-gradient(top,#85bae4,#5393c5);
+}
+nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 1px 0 white;
+}
+nav ul li a:hover {
+    text-decoration: none;
+}
+nav ul li.active a {
+    color: white;
+    text-shadow: 0 -1px 1px #145072;
+}
+
+.dialog {
+    position: absolute;
+    z-index: 100;
+    top: 300px;
+    width: 255px;
+    -webkit-box-sizing: border-box;
+    background-image: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0,    rgba(88, 89, 91, 0.8)),
+            color-stop(0.45, rgba(51, 51, 51, 0.8)),
+            color-stop(1,    rgba(0, 0, 0, 0.8)));
+    text-align: center;
+}
+.dialog .title {
+    color: #fff;
+    padding: 3px 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.dialog .comment {
+    padding: 19px 0;
+}
+.dialog .content {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0 20px 0;
+}
+.dialog .comment input {
+    font-size: 15px;
+    color: #030303;
+    height: 27px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    background-color: #fff;
+}
+.dialog .buttons {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+.dialog .buttons a {
+    border: 1px solid #000;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    display: -webkit-box;
+    width: 116px;
+    height: 37px;
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-sizing: border-box;
+    line-height: 1;
+}
+.dialog .buttons a:hover {
+    text-decoration: none;
+}
+.dialog .buttons a.cancel {
+    background-image: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0,   #0f9cd6),
+            color-stop(1, #1e54a3));
+    margin: 0 7px 0 0;
+}
+.dialog .buttons a.yes {
+    background-image: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0,   #999),
+            color-stop(0.5, #4d4d4d),
+            color-stop(1,   #4d4d4d));
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(120,120,120, 0.5);
+}
