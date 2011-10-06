@@ -7,10 +7,7 @@
 }
 #index .content {
     padding: 0 15px;
-    width: 100%;
     -webkit-box-sizing: border-box;
-    position: absolute;
-    top: 41px;
 }
 #index .content textarea {
     background-color: transparent;

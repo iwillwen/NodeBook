@@ -2,12 +2,14 @@
     <header>
         <h1>NodeBook</h1>
     </header><!-- /header -->
-    <div class="content">
-        <div class="content-aera">
-            <textarea></textarea>
-        </div>
-        <a href="#dialog" class="submit">提交</a>
-    </div><!-- /content -->
+    <article>
+        <div class="content">
+            <div class="content-aera">
+                <textarea></textarea>
+            </div>
+            <a href="#dialog" class="submit">提交</a>
+        </div><!-- /content -->
+    </article>
     <footer>
         <nav>
             <ul>
