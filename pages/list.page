@@ -3,8 +3,10 @@
         <h1>Note List</h1>
     </header><!-- /header -->
     <article>
-        <ul class="listview" id="notes">
-        </ul>
+        <div class="scroller">
+            <ul class="listview" id="notes">
+            </ul>
+        </div>
     </article><!-- /content -->
     <footer>
         <nav>
