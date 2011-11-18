@@ -6,7 +6,7 @@
     -webkit-overflow-scrolling: touch;
 }
 #index .content-area {
-    background-image: url('http://nodeb.cnodejs.net/css/images/notespageback.png');
+    background-image: url('/images/notespageback.png');
     border-bottom-right-radius: 0.9em 0.9em;
     border-bottom-left-radius: 0.9em 0.9em;
     margin-bottom: 8px;
