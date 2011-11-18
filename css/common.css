@@ -1,5 +1,5 @@
 section.page {
-    background: url('http://nodeb.cnodejs.net/css/images/wood.jpg');
+    background: url('/images/wood.jpg');
 }
 header {
     background-image: -webkit-gradient(linear,left top,left bottom,from(#ffdf68),to(#f9b500));
