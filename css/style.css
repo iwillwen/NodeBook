@@ -1,0 +1,51 @@
+.page-body {
+    background: url('http://nodebook.cnodejs.net/css/images/wood.jpg');
+}
+#content-aera {
+	background: url('http://nodebook.cnodejs.net/css/images/notespageback.png') transparent;
+	-moz-border-radius: .9em;
+	-webkit-border-radius: .9em;
+	border-radius: .9em;
+	padding-left: 10px;
+	padding-top: 8px;
+	margin-top: -60px;
+}
+#content {
+	background: transparent;
+	color: #646464;
+	font-size: 1.6em;
+	height: 80%;
+	width: 95%;
+	margin: 10px;
+	margin-top: 35px;
+	border: none;
+	border-left: 1px rgba(200, 0, 0, 0.3) solid;
+	box-shadow: none;
+	padding: 0;
+	padding-left: 5px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.header {			
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#FFDF68),to(#F9B500));
+	background-image: -webkit-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -moz-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -ms-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -o-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: linear-gradient(top,#FFDF68,#F9B500);
+}
+.ui-btn-e {
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#FFDF68),to(#F9B500));
+	background-image: -webkit-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -moz-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -ms-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: -o-linear-gradient(top,#FFDF68,#F9B500);
+	background-image: linear-gradient(top,#FFDF68,#F9B500);
+}
+#back-url {
+	text-align: center;
+}
+#share-buttons {
+	margin-top: 10px;
+}

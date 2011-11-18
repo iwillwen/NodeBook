@@ -1,0 +1,58 @@
+#index article {
+    top: 0;
+    bottom: 37px;
+    position: absolute;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+#index .content-area {
+    background-image: url('http://nodeb.cnodejs.net/css/images/notespageback.png');
+    border-bottom-right-radius: 0.9em 0.9em;
+    border-bottom-left-radius: 0.9em 0.9em;
+    margin-bottom: 8px;
+}
+#index .content {
+    width: 97%;
+    margin: 0 auto;
+    padding-top: 41px;
+    margin-bottom: 45px;
+}
+#index .content textarea {
+    -webkit-transition: height 200ms linear;
+    -moz-transition: height 200ms linear;
+    -o-transition: height 200ms linear;
+    transition: height 200ms linear;
+    background-color: transparent;
+    color: #646464;
+    font-size: 1.6em;
+    width: 95%;
+    border: none;
+    border-left: 1px rgba(200, 0, 0, 0.3) solid;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    min-height: 300px;
+    max-width: 95%;
+    min-width: 95%;
+}
+#index .submit {
+    display: block;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    background-color: #FADB4E;
+    background-image: -webkit-linear-gradient(top,#fceda7,#fadb4e);
+    font-weight: bold;
+    color: #333;
+    padding: 9px 20px;
+    text-shadow: 0 1px 0 white;
+    border-top: 1px solid white;
+    border-color: rgba(255, 255, 255, .3);
+    margin: 0 5px;
+    border-radius: 1em;
+}
+#content-buffer {
+    font-family: monospace;
+    font-size: 1.6em;
+    width: 100%;
+}

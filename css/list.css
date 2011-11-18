@@ -1,0 +1,22 @@
+#list article {
+    padding: 0 15px 37px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    top: 41px;
+    bottom: 37px;
+}
+#list .listview li {
+    display: -webkit-box;
+}
+#list .listview {
+    padding: 10px 0 10px;
+}
+#list .listview li .content {
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+}

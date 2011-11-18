@@ -1,0 +1,4 @@
+{
+   "name":"nodebook",
+   "main":"./server.js"
+}
